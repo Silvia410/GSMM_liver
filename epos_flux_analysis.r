@@ -138,7 +138,7 @@ table2 <- lapply(variables, function(i){
   )
 })
 
-ggplot(data1, aes(y = `HOMA-IR`, x=MASLD , fill = MASLD)) +
+ggplot(df, aes(y = `HOMA-IR`, x=MASLD , fill = MASLD)) +
   geom_boxplot() + geom_point(size = 1) + 
   theme_classic()+ scale_fill_brewer(palette = "OrRd") +
   theme(text = element_text(size = 10), 
@@ -147,7 +147,7 @@ ggplot(data1, aes(y = `HOMA-IR`, x=MASLD , fill = MASLD)) +
   xlab("") +
   ylab("HOMA IR") 
 
-ggplot(data1, aes(y = `A-IR`, x=MASLD , fill = MASLD)) +
+ggplot(df, aes(y = `A-IR`, x=MASLD , fill = MASLD)) +
   geom_boxplot() + geom_point(size = 1) + 
   theme_classic()+ scale_fill_brewer(palette = "OrRd") +
   theme(text = element_text(size = 10), 
@@ -156,7 +156,7 @@ ggplot(data1, aes(y = `A-IR`, x=MASLD , fill = MASLD)) +
   xlab("") +
   ylab("A-IR") 
 
-ggplot(data1, aes(y = `Hep-IR`, x=MASLD , fill = MASLD)) +
+ggplot(df, aes(y = `Hep-IR`, x=MASLD , fill = MASLD)) +
   geom_boxplot() + geom_point(size = 1) + 
   theme_classic()+ scale_fill_brewer(palette = "OrRd") +
   theme(text = element_text(size = 10), 
